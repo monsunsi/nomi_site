@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.header-stripe-gradient {
+  background-image: linear-gradient(to left, #8ed1fc, #011aa8);
+}
+
 .header-stripe {
   background-image: linear-gradient(to left, #8ed1fc, #011aa8);
   width: 100%;
@@ -56,7 +60,6 @@
   align-items: center;
 }
 
-
 .header-icon {
   height: 36px;
   filter: brightness(0) invert(1);
@@ -82,7 +85,8 @@
 .header-title-superscript {
   padding: 100px 40px 0 0;
   font-size: 20px;
-  color: #79c2d8;
+  color: #87b3c5;
+  font-weight: bold;
 }
 
 .header-title-main {
@@ -110,7 +114,6 @@
   margin: auto;
   background-color: #011aa8;
 }
-
 
 #mc-embedded-subscribe-form {
   padding: 25px;
@@ -151,4 +154,21 @@
   font-weight: 600;
   font-family: "Montserrat", serif;
   padding: 15px 30px;
+}
+
+/* cards */
+
+.card-sh {
+  box-shadow: 0px 3px 10px 0px #302a2a !important;
+}
+
+.card-home {
+  border-radius: 25px;
+  height: 350px;
+  background-color: rgb(200, 241, 248);
+  transition: transform 250ms ease-in-out
+}
+
+.card-home:hover {
+  transform: translateY(-8px);
 }
