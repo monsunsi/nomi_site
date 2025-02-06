@@ -166,7 +166,8 @@
   border-radius: 25px;
   height: 350px;
   background-color: rgb(200, 241, 248);
-  transition: transform 250ms ease-in-out
+  transition: transform 250ms ease-in-out;
+  max-width: 450px;
 }
 
 .card-home:hover {
