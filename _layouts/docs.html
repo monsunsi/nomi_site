@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="columns" style="height:calc(100% - 3.25rem);position:fixed;left:0;top:4rem;">
+    <div class="column has-background-grey-lighter p-0 pr-3 pl-3" style="flex: 0 0 280px;">
+        {% include docs_list.html %}
+    </div>
+    <div class="column" style="flex: 0 0 20px;"></div>
+    <div class="column p-0" style="overflow-y: auto;flex: 0 0 calc(100vw - 300px);">
+        <div class="block mt-5 ml-auto mr-auto mb-5" style="width:50%;">
+            {{ content }}
+        </div>
+    </div>
+</div>

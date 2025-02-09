@@ -1,0 +1,26 @@
+<div class="container m-3">
+    {% if site.posts.size > 0 %}
+    <ul>
+        {% for category in site.categories %}
+        <li>
+            <strong class="has-text-black" style="text-transform: uppercase;">{{ category[0] | capitalize }}</strong>
+
+            <ul class="mt-1 mb-6">
+                {% for post in category[1] %}
+                <li class="p-1">
+                    <a class="has-text-black" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+
+        </li>
+        {% endfor %}
+    </ul>
+
+
+      
+      
+    {% else %}
+    No posts
+    {% endif %}
+</div>

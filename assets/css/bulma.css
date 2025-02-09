@@ -9048,6 +9048,13 @@
       );
 }
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+
+/* custom  */
+
+
+
+/* end custom  */
+
 blockquote,
 body,
 dd,
@@ -9083,6 +9090,19 @@ h6 {
   font-size: 100%;
   font-weight: 400;
 }
+/* custom  */
+
+h1 { font-size: 3rem; }   /* Equivalent to .is-size-1 */
+h2 { font-size: 2.5rem; } /* Equivalent to .is-size-2 */
+h3 { font-size: 2rem; }   /* Equivalent to .is-size-3 */
+h4 { font-size: 1.5rem; } /* Equivalent to .is-size-4 */
+h5 { font-size: 1.25rem; } /* Equivalent to .is-size-5 */
+h6 { font-size: 1rem; }   /* Equivalent to .is-size-6 */
+
+ol { list-style-position: inside;}
+/* end custom  */
+
+
 ul {
   list-style: none;
 }
@@ -14290,11 +14310,14 @@ a.navbar-item {
 a.navbar-item:focus,
 a.navbar-item:focus-within,
 a.navbar-item:hover {
-  --bulma-navbar-item-background-l-delta: var(
+  /* --bulma-navbar-item-background-l-delta: var(
     --bulma-navbar-item-hover-background-l-delta
   );
-  --bulma-navbar-item-background-a: 1;
+  --bulma-navbar-item-background-a: 1; */
 }
+
+
+
 .navbar-link:active,
 a.navbar-item:active {
   --bulma-navbar-item-background-l-delta: var(

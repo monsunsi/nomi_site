@@ -173,3 +173,17 @@
 .card-home:hover {
   transform: translateY(-8px);
 }
+
+body {
+  height: 100vh;
+}
+
+.navbar-item, .navbar-link {
+  /* color: white ; */
+}
+
+.navbar-item:hover, .navbar-dropdown:hover {
+  /* background-color: white !important;
+  color: black !important; 
+  opacity: 1 !important; */
+}
