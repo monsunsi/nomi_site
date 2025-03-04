@@ -564,9 +564,9 @@
     1
   );
   --bulma-primary-rgb: 0, 209, 178;
-  --bulma-primary-h: 171deg;
+  /* --bulma-primary-h: 171deg; */
   --bulma-primary-s: 100%;
-  --bulma-primary-l: 41%;
+  /* --bulma-primary-l: 41%; */
   --bulma-primary-00-l: 1%;
   --bulma-primary-05-l: 6%;
   --bulma-primary-10-l: 11%;
@@ -940,9 +940,11 @@
     1
   );
   --bulma-link-rgb: 66, 88, 255;
-  --bulma-link-h: 233deg;
+  /* --bulma-link-h: 233deg; */
   --bulma-link-s: 100%;
-  --bulma-link-l: 63%;
+  /* --bulma-link-l: 63%; */
+  --bulma-link-h: 29deg;
+  --bulma-link-l: 59%;
   --bulma-link-00-l: 0%;
   --bulma-link-05-l: 3%;
   --bulma-link-10-l: 8%;
@@ -3506,10 +3508,12 @@
       var(--bulma-primary-l),
       1
     );
-    --bulma-primary-rgb: 0, 209, 178;
-    --bulma-primary-h: 171deg;
+    /* --bulma-primary-rgb: 0, 209, 178; */
+    /* --bulma-primary-h: 171deg; */
     --bulma-primary-s: 100%;
-    --bulma-primary-l: 41%;
+    /* --bulma-primary-l: 41%; */
+    --bulma-primary-h: 205deg;
+    --bulma-primary-l: 67%;
     --bulma-primary-00-l: 1%;
     --bulma-primary-05-l: 6%;
     --bulma-primary-10-l: 11%;
@@ -4259,9 +4263,11 @@
       1
     );
     --bulma-info-rgb: 102, 209, 255;
-    --bulma-info-h: 198deg;
+    /* --bulma-info-h: 198deg; */
     --bulma-info-s: 100%;
-    --bulma-info-l: 70%;
+    /* --bulma-info-l: 70%; */
+    --bulma-info-h: 257deg;
+    --bulma-info-l: 60%;
     --bulma-info-00-l: 0%;
     --bulma-info-05-l: 5%;
     --bulma-info-10-l: 10%;
@@ -4635,9 +4641,12 @@
       1
     );
     --bulma-success-rgb: 72, 199, 142;
-    --bulma-success-h: 153deg;
+    /* --bulma-success-h: 153deg;
     --bulma-success-s: 53%;
-    --bulma-success-l: 53%;
+    --bulma-success-l: 53%; */
+    --bulma-success-h: 123deg;
+    --bulma-success-s: 62%;
+    --bulma-success-l: 63%;
     --bulma-success-00-l: 0%;
     --bulma-success-05-l: 3%;
     --bulma-success-10-l: 8%;
@@ -5011,9 +5020,11 @@
       1
     );
     --bulma-warning-rgb: 255, 183, 15;
-    --bulma-warning-h: 42deg;
+    /* --bulma-warning-h: 42deg; */
     --bulma-warning-s: 100%;
-    --bulma-warning-l: 53%;
+    /* --bulma-warning-l: 53%; */
+    --bulma-warning-h: 0deg;
+    --bulma-warning-l: 78%;
     --bulma-warning-00-l: 0%;
     --bulma-warning-05-l: 3%;
     --bulma-warning-10-l: 8%;
@@ -5387,9 +5398,11 @@
       1
     );
     --bulma-danger-rgb: 255, 102, 133;
-    --bulma-danger-h: 348deg;
+    /* --bulma-danger-h: 348deg; */
     --bulma-danger-s: 100%;
-    --bulma-danger-l: 70%;
+    /* --bulma-danger-l: 70%; */
+    --bulma-danger-h: 0deg;
+    --bulma-danger-l: 41%;
     --bulma-danger-00-l: 0%;
     --bulma-danger-05-l: 5%;
     --bulma-danger-10-l: 10%;
@@ -32824,4 +32837,21 @@ has-background-danger.is-hoverable:active {
 .is-clickable {
   cursor: pointer !important;
   pointer-events: all !important;
+}
+
+/* new colors */
+:root {
+  --bulma-primary-h: 205deg;
+  --bulma-primary-l: 67%;
+  --bulma-link-h: 29deg;
+  --bulma-link-l: 59%;
+  --bulma-info-h: 257deg;
+  --bulma-info-l: 60%;
+  --bulma-success-h: 123deg;
+  --bulma-success-s: 62%;
+  --bulma-success-l: 63%;
+  --bulma-warning-h: 0deg;
+  --bulma-warning-l: 78%;
+  --bulma-danger-h: 0deg;
+  --bulma-danger-l: 41%;
 }

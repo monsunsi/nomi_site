@@ -2,61 +2,57 @@
 <html lang=en class="html" data-theme="light">
 {%- include head.html -%}
 
-<body class="has-background-white" style="height:100vh;">
+<body>
   <header>
-    <nav class="navbar header-stripe-gradient" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a href="{{ site.baseurl }}//" class="navbar-item" href="#">
-          <figure class="is-64x64 pr-5">
-            <img class="is-fullwidth" src="{{ site.baseurl }}/assets/images/nomi-icon.png" alt=""
+        <a href="{{ site.baseurl }}/" class="navbar-item nomi-icon is-hidden-desktop"
+          style="background-color: #545454 !important;">
+          <figure class="pr-5 nomi-icon-figure">
+            <img class="nomi-icon is-fullwidth" src="{{ site.baseurl }}/assets/images/nomi-icon.png" alt=""
               style="filter: brightness(0) invert(1);">
           </figure>
         </a>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
+
       <div class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item has-text-white">
-            Solution
-          </a>
-          <a class="navbar-item has-text-white">
-            Pricing
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a href="{{ site.baseurl }}//docs/" class="navbar-link has-text-white">
-              Docs
-            </a>
-            <div class="navbar-dropdown">
-              {% for category in site.categories %}
-              <a class="navbar-item">{{ category[0] }}</strong></a>
-                {% endfor %}
-            </div>
+        <a href="{{ site.baseurl }}/" class="navbar-item is-nomi-icon">
+          <figure class="pr-5">
+            <img class="nomi-icon is-fullwidth" src="{{ site.baseurl }}/assets/images/nomi-icon.png" alt=""
+              style="filter: brightness(0) invert(1);">
+          </figure>
+        </a>
+        <a class="navbar-item is-hoverable has-text-white">Solution</a>
+        <a class="navbar-item has-text-white">Pricing</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a href="{{ site.baseurl }}/docs/" class="navbar-link is-arrowless has-text-white">Docs</a>
+          <div class="navbar-dropdown">
+            {% for category in site.categories %}
+            <a class="navbar-item has-text-white">{{ category[0] }}</a>
+            {% endfor %}
           </div>
         </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary is-small">
-                <strong>Contact us</strong>
-              </a>
-              <a class="button is-light is-small">
-                Log in
-              </a>
-            </div>
+        <div class="navbar-item pl-6 nav-btn">
+          <div class="buttons">
+            <a class="button is-link is-small"><strong>Contact us</strong></a>
+            <!-- <a class="button is-light is-small">Log in</a> -->
           </div>
         </div>
       </div>
     </nav>
+
   </header>
 
 
   {{ content }}
 </body>
+
+{%- include foot.html -%}
 
 </html>

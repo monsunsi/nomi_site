@@ -2,62 +2,82 @@
 layout: default
 title: testing
 ---
-<section class="section p-0 pt-2 header-stripe-gradient">
-  <div class="container p-5">
-    <div class="columns">
-      <div class="column is-half">
-        <div class="block pl-2 pr-2">
-          <div class="header-title-superscript">
-            .NET Services and Micro Services Design
-          </div>
-        </div>
-        <div class="block pl-2 pr-2">
-          <div class="header-title-main has-text-white is-size-2" style="font-weight: bold;">
-            Rapid Code Deployment With a Generic Host
-          </div>
-        </div>
-        <div class="block pl-2 pr-2">
-          <div class="header-title-sub has-text-white">
-            Designed by developers for developers to remove bureaucracy and spend time where it matters -
-            writing
-            code.
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-one-quarter"><button class="button is-link is-rounded mr-5 is-large">Try now</button></div>
-          <div class="column is-one-quarter"><button class="button is-info is-rounded mr-5 is-large">Read our docs</button></div>
-          <div class="column"></div>
-        </div>
-        
-      </div>
-      
-      <div class="column is-half">
-        <figure class="image is-square ml-auto is-hidden-mobile" style="max-width:30vw;height:30vw;">
-          <img src="{{ site.baseurl }}/assets//images/nomi-large-icon.png" alt="" style="">
-        </figure>
+<section id="hero1" class="section p-0 pt-2 header-stripe-gradient">
+  <div class="container hero1" style="padding:10vh 20px 20px 20px;">
+    <div class="header-title-superscript m-auto has-text-link">
+      .NET Services and Micro Services Design
+    </div>
+    <div class="header-title-main has-text-white is-size-2" style="font-weight: bold;">
+      Rapid Code Deployment With a Generic Host
+    </div>
+    <div class="block pr-2">
+      <div class="header-title-sub has-text-white">
+        Designed by developers for developers to remove bureaucracy and spend time where it matters -
+        writing
+        code.
+        Scale <strong class="has-text-link">smarter</strong>, develop <strong class="has-text-link">faster</strong>, and
+        <strong class="has-text-link">deploy</strong> with confidence.
       </div>
     </div>
-  </div>
-  <div class="container is-full p-0" style="max-width:100% !important">
-    <svg style="width:100%;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-        <path class="" style="opacity:0.66; fill:hsl(var(--bulma-info-h),var(--bulma-info-s),var(--bulma-info-l))"
-          d="M329.7,73.79c-50.4,-4 -99.94,-6.49 -123.24,-23.79c-13,-9.8 -76.7,-33.75 -109.5,-30.45c-32.8,3.2 -96.96,54 -96.96,54v36.44l1070.7,-18.74c0,0 -91.5,-38.45 -115.5,-50c-27.71,-13.33 -54.97,-41.63 -154.74,24.81c-60,39.95 -119.86,-113.11 -323.76,-24.81c-19.4,8.3 -96.6,36.55 -147,32.55z">
-        </path>
-        <path class="" style="opacity:0.33; fill:hsl(var(--bulma-info-h),var(--bulma-info-s),var(--bulma-info-l))"
-          d="M81.59,75.05c-63.9,0 -81.59,-37.5 -81.59,-37.5v62.45h1000l7.46,-57.95c0,0 -7.46,-22.5 -94.5,7.95c-63.25,22.13 -106.3,-42.15 -210,7.05c-103.7,49.2 -241.4,1.65 -270,-7.05c-51.9,-15.9 -61,-27.45 -106.5,-27.45c-41.7,0 -144.17,52.4 -241.87,52.5z">
-        </path>
-        <path class="" style=" fill:hsl(var(--bulma-info-h),var(--bulma-info-s),var(--bulma-info-l))"
-          d="M78.5,50c-73.7,7.2 -97.5,50 -97.5,50h1053c0,0 -49.7,-73.65 -111,-62.45c-42.4,7.6 -30.2,11.8 -87,27c-57.2,15.2 -55.5,32.05 -184.5,-14.55c-129.1,-46 -227.41,70.55 -427.41,13.05c-63.5,-18.1 -71.89,-20.25 -145.59,-13.05z">
-        </path>
-      </svg>
-    </svg>
+    <div class="columns pt-1" style="width:50%;">
+      <div class="column is-one-quarter"><button class="button is-rounded is-medium is-link">Try now</button>
+      </div>
+      <div class="column is-one-quarter"><button class="button is-rounded is-medium is-primary">Read our docs</button>
+      </div>
+      <div class="column"></div>
+    </div>
+    <figure class="image pt-5 is-hidden-mobile">
+      <img class="" src="/assets/images/nomi-install-gif.gif" />
+    </figure>
   </div>
 </section>
 
-<section class="section p-5">
-  <div class="columns has-text-left">
-    <div class="column"></div>
+
+<!-- <section id="benefits">
+  <div class="container m-auto has-text-centered has-text-white">
+    <h1 class="has-text-white">Our benefits</h1>
+  </div>
+<p class="has-text-centered has-text-white m-auto pb-6 pt-6" style="width:30%">Nomi is designed to empower developers and streamline work. We ensure that developers can focus on business needs and have a stable platform, which is infinitely scalable, easily updatable and easy to work with.</p>
+  <div class="columns m-auto" style="width:70%;">
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h2 class="has-text-link has-text-centered">.NET native</h2>
+            Built by developers for developers to reduce application infrastructure red tape and ensure time is well
+            spent .
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h2 class="has-text-link has-text-centered">Infrastructure included</h2>
+            Includes all the required packages to get you started in moments. Packaged as a simple docker image.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h2 class="has-text-link has-text-centered">Observability</h2>
+            Native Open Telemetry coupled with Traefik, Seq and Jager gives you unprecendeted visibility of your
+            services
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="section p-5 mb-6 m-auto" style="width:70%">
+  <div class="columns has-text-left is-justify-content-center">
     <div class="column is-one-quarter has-text-black p-3 m-3 card-sh card-home">
       <div class="container pt-1 pl-3 pr-3 is-flex is-flex-direction-column" style="height:100%;">
         <span class="icon is-large has-text-white" style="background-color: white; border-radius:25px">
@@ -103,13 +123,13 @@ title: testing
         <span class="icon is-large has-text-white" style="background-color: white; border-radius:25px">
           <i class="fa-solid fa-phone-volume has-text-black"></i>
         </span>
-        <h2 class="is-size-3 pb-3">Start for free.</h2>
+        <h2 class="is-size-3 pb-3">Join the community.</h2>
         <p style="font-weight:400;">
           Start using Nomirun immediately. No credit card required.
         </p>
-        <button class="button is-link is-rounded mt-auto mb-6">Request a call</button>
+        <a href="https://discord.gg/RU29HXzm" target="_blank" class="button is-link is-rounded mt-auto mb-6">Request a
+          call</a>
       </div>
     </div>
-    <div class="column"></div>
   </div>
 </section>

@@ -1,109 +1,130 @@
 /* Header section */
-
-.header-container {
-  position: relative;
+nav {
+  background-color: #545454 !important;
 }
 
-.header-stripe-gradient {
-  background-image: linear-gradient(to left, #8ed1fc, #011aa8);
+.navbar-item,
+.navbar-dropdown,
+.navbar-menu,
+.navbar-link {
+  background-color: #696969 !important;
 }
 
-.header-stripe {
-  background-image: linear-gradient(to left, #8ed1fc, #011aa8);
-  width: 100%;
-  height: 50vh;
-  margin: 0;
-  padding: 0;
+.navbar-link:not(.nav-btn):hover,
+.navbar-item:not(.nav-btn):hover {
+  background-color: #7d7d7d !important;
 }
 
-.header-swirlies {
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 10vh;
+#hero1 {
+  height: calc(100vh - 4.5rem - 8px);
 }
 
-.pagelayer-shape-fill {
-  width: 100vw;
-  fill: white;
+@media (min-width: 1024px) {
+  .nomi-icon {
+    height: 64px;
+    width: 64px;
+    max-height: 128px !important;
+  }
+
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-item {
+    color: white;
+  }
+
+  .social-icons {
+    width: 15%;
+  }
+
+  .footer-links {
+    width: 25%;
+  }
+
+  .header-title-sub {
+    width:50%;
+  }
 }
 
-.header-link-container {
-  position: absolute;
-  top: 0;
-  font-weight: bold;
-  font-size: 26px;
-  color: white;
-  width: 100%;
+@media (max-width: 1024px) {
+  .is-nomi-icon {
+    display: none !important;
+  }
+
+  .navbar-item,
+  .navbar-dropdown,
+  .navbar-menu,
+  .navbar-link {
+    background-color: #696969 !important;
+  }
+
+  .social-icons {
+    width: 50%;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  /* .header-title-sub {
+    width:50%;
+  } */
 }
 
-.header-menu-items {
-  width: 70%;
-  max-width: 1200px;
-  margin: 20px auto 0 auto;
-  height: 5vh;
-}
+/* First section */
 
-.header-item {
-  float: left;
-  display: table-cell;
-  vertical-align: middle;
-  height: 5vh;
-  /* margin: auto 0; */
-  line-height: 5vh;
-}
-
-.header-item > div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.header-icon {
-  height: 36px;
-  filter: brightness(0) invert(1);
-}
-
-.header-links {
-  color: white;
-  text-decoration: none;
-  width: 25%;
-  text-align: center;
-  font-size: 18px;
-  /* padding:20px; */
-}
-
-.header-title-container {
-  display: title;
-  max-width: 1200px;
-  width: 70%;
-  margin: 2.5vh auto 0 auto;
-  height: calc(30vh - 20px);
-}
-
-.header-title-superscript {
-  padding: 100px 40px 0 0;
-  font-size: 20px;
-  color: #87b3c5;
-  font-weight: bold;
-}
-
-.header-title-main {
-  font-size: 36px;
-  padding: 0 40px 0 0;
-}
-
-.header-title-sub {
-  font-size: 16px;
-  padding: 20px 40px 0 0;
-  font-weight: 200;
-}
+/* .nomi-install-gif {
+  clip-path: inset(0 0 15% 0);
+} */
 
 /* General */
 
 .table-split {
   display: table;
+}
+
+/* cards */
+
+.card-sh {
+  box-shadow: 0px 3px 10px 0px #302a2a !important;
+}
+
+.card-home {
+  border-radius: 25px;
+  height: 350px;
+  background-color: #cdcdcd;
+  transition: transform 250ms ease-in-out;
+  max-width: 450px;
+}
+
+.card, .card-content {
+  min-height:225px;
+}
+
+.card-home:hover {
+  transform: translateY(-8px);
+}
+
+body {
+  height: 100vh;
+}
+
+html {
+  background-color: #545454 !important;
+}
+
+.navbar-item,
+.navbar-link {
+  /* color: white ; */
+}
+
+.navbar-item:hover,
+.navbar-dropdown:hover {
+  /* background-color: white !important;
+  color: black !important; 
+  opacity: 1 !important; */
 }
 
 /* Mailchimp signup form */
@@ -156,34 +177,10 @@
   padding: 15px 30px;
 }
 
-/* cards */
+/* Footer  */
 
-.card-sh {
-  box-shadow: 0px 3px 10px 0px #302a2a !important;
-}
-
-.card-home {
-  border-radius: 25px;
-  height: 350px;
-  background-color: rgb(200, 241, 248);
-  transition: transform 250ms ease-in-out;
-  max-width: 450px;
-}
-
-.card-home:hover {
-  transform: translateY(-8px);
-}
-
-body {
-  height: 100vh;
-}
-
-.navbar-item, .navbar-link {
-  /* color: white ; */
-}
-
-.navbar-item:hover, .navbar-dropdown:hover {
-  /* background-color: white !important;
-  color: black !important; 
-  opacity: 1 !important; */
+.footer {
+  background-color: #696969 !important;
+  border-top: 1px solid;
+  border-color: #7e7e7e;
 }
